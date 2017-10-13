@@ -18,10 +18,10 @@ public class Employee {
     private String name;
     
     @Column(name="role")
-    private Object role;
+    private Role role;
     
     @Column(name="task")
-    private ArrayList<Object> tasks;
+    private ArrayList<Task> tasks;
 
     public int getId() {
         return id;
@@ -39,19 +39,19 @@ public class Employee {
         this.name = name;
     }
 
-    public Object getRole() {
+    public Role getRole() {
         return role;
     }
 
-    public void setRole(Object role) {
+    public void setRole(Role role) {
         this.role = role;
     }
 
-    public ArrayList<Object> getTasks() {
+    public ArrayList<Task> getTasks() {
         return tasks;
     }
 
-    public void setTasks(ArrayList<Object> tasks) {
+    public void setTasks(ArrayList<Task> tasks) {
         this.tasks = tasks;
     }
 }
